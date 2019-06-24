@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
 
+html { overflow-y: scroll; }
 
 body{
     background: #e8e8e8;
     font-family: cairo;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 footer{
@@ -17,6 +17,7 @@ footer{
     left: 0;
     position: fixed;
     border-radius: 5px 5px 0 0;
+    z-index: 999;
 }
 
 footer .container{
@@ -26,6 +27,7 @@ footer .container{
     bottom: 0;
     left: 0;
     float: left;
+    z-index: 999;
 }
 
 .avatar-container {
@@ -40,6 +42,7 @@ footer .container{
     height: 135px;
     border-radius: 100%;
     overflow: hidden;
+    z-index: 999;
 }
 
 .avatar {
@@ -53,34 +56,35 @@ footer .container{
     width: 120px;
     height: 120px;
     border-radius: 100%;
+    z-index: 999;
 }
 
-footer .avatar a{
+footer .avatar img{
     position: absolute;
-    color: #fff;
-    font-size: 50px;
+    width: 70px;
     text-align: center;
     left: 0;
     right: 0;
-    top: 15px;
+    top: 30px;
     margin: auto;
+    z-index: 999;
 }
 
-.container .about{
+.container .about img{
     position: absolute;
-    font-size: 30px;
-    color: #fff;
+    width: 35px;
     float: left;
     left: 6%;
+    top: 8px;
     overflow: hidden;
 }
 
 .container .contact{
     position: absolute;
-    font-size: 30px;
-    color: #fff;
+    width: 45px;
     float: right;
     right: 6%;
+    top: 5px;
     overflow: hidden;
 }
 
@@ -90,16 +94,18 @@ footer .avatar a{
     left: 0;
     top: 150px;
     margin: 0;
+    z-index: 0;
 }
 
 .firstpagecontent img{
     display: block;
-    width: 200px;
+    width: 100px;
     left: 0;
     right: 0;
-    top: 0;
+    margin-top: -25px;
     bottom: 0;
     margin: auto;
+    z-index: 0;
 }
 
 .logotext h1{
@@ -114,11 +120,13 @@ footer .avatar a{
     color: #1c1f24;
     font-weight: 100;
     letter-spacing: -3px;
+    z-index: 0;
 }
 
 .logotext h1 span{
     font-weight: 900;
     letter-spacing: -1px;
+    z-index: 0;
 }
 
 .slogan{
@@ -132,6 +140,7 @@ footer .avatar a{
     font-size: 18px;
     color: #33241c;
     font-weight: 100;
+    z-index: 0;
 }
 
 .slogan strong{
@@ -148,6 +157,7 @@ footer .avatar a{
     overflow: hidden;
     background: #e8e8e8;
     transition: 0.7s;
+    z-index: 10;
 }
 
 .aboutcontent{
@@ -156,19 +166,17 @@ footer .avatar a{
     display: inherit;
     left: 0;
     right: 0;
-    top: 50px;
     bottom: 0;
     margin: auto;
     text-align: center;
     background: #e8e8e8;
-    overflow: hidden;
 }
 
 .aboutavatar img{
     position: relative;
-    top: 70px;
-    width: 150px;
-    border: solid 2px #1c1f24;
+    top: 15px;
+    width: 70px;
+    border: solid 1px #1c1f24;
     border-radius: 100%;
 }
 
@@ -178,19 +186,20 @@ footer .avatar a{
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
+    margin: -25px auto;
     text-align: center;
     width: 80%;
-    height: 325px;
-    border: solid 2px #1c1f24;
-    border-radius: 5px;
-    background: #e8e8e8;
+    height: max-content;
+    border: solid 1px #1c1f24;
+    border-radius: 5px 5px 0 0;
+    z-index: 10;
 }
 
 .name{
     position: relative;
-    top: 50px;
-    font-weight: 400
+    top: 15px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .name span{
@@ -199,8 +208,8 @@ footer .avatar a{
 
 .job{
     position: relative;
-    top: 5px;
-    font-size: 20px;
+    top: -12px;
+    font-size: 14px;
     color: #242a33;
 }
 
@@ -209,8 +218,9 @@ footer .avatar a{
     text-align: justify;
     margin-left: 12px;
     margin-right: 12px;
-    font-size: 18px;
+    font-size: 12px;
     color: #33241c;
+    z-index: 10;
 }
 
 .breaker{
@@ -223,7 +233,7 @@ footer .avatar a{
     text-align: center;
     width: 50%;
     height: 10px;
-    border-bottom: dashed 2px #1c1f24;
+    border-bottom: dashed 1px rgba(28, 31, 36, 0.7);
 }
 
 .aboutheader{
@@ -253,17 +263,17 @@ footer .avatar a{
 .aboutheader a{
     position: absolute;
     margin-left: 12px;
-    font-size: 25px;
-    color: #1c1f24;
+    margin-top: 12px;
+    width: 25px;
     cursor: pointer;
 }
 
 .aboutheader span{
-    position: relative;
+    position: absolute;
     display: block;
     float: left;
     left: 40px;
-    top: 5px;
+    top: -6px;
     height: 40px;
     width: 1px;
     background: rgba(28, 31, 36, 0.3);
@@ -287,12 +297,11 @@ footer .avatar a{
     display: inherit;
     left: 0;
     right: 0;
-    top: 50px;
+    top: 0px;
     bottom: 0;
     margin: auto;
     text-align: center;
     background: #e8e8e8;
-    overflow: hidden;
 }
 
 .contactheader{
@@ -303,7 +312,6 @@ footer .avatar a{
     top: 0;
     background: #e8e8e8;
     box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
 }
 
 .contactheader h1{
@@ -322,21 +330,20 @@ footer .avatar a{
 .contactheader a{
     position: absolute;
     margin-left: 12px;
-    font-size: 25px;
-    color: #1c1f24;
+    margin-top: 12px;
+    width: 25px;
     cursor: pointer;
 }
 
 .contactheader span{
-    position: relative;
+    position: absolute;
     display: block;
     float: left;
     left: 40px;
-    top: 5px;
+    top: -6px;
     height: 40px;
     width: 1px;
     background: rgba(28, 31, 36, 0.3);
-    overflow: hidden;
 }
 
 .contactme, .contactacc, .instant{
@@ -344,29 +351,26 @@ footer .avatar a{
     width: 100%;
     left: 20px;
     right: 0;
-    top: 50px;
-    margin: auto;
-    overflow: hidden;
+    top: 10px;
+    margin: 5px auto;
 }
 
 .contactme span, .contactacc span, .instant span{
     position: relative;
     display: inherit;
     width: 40%;
-    height: 20px;
-    top: -45px;
+    height: 2px;
+    top: -25px;
     border-bottom: 1px solid rgba(28, 31, 36, 1);
-    overflow: hidden;
 }
 
 .contactinfo{
     position: relative;
     display: block;
     left: 0px;
-    top: 5px;
+    top: 20px;
     float: left;
     width: 100%;
-    overflow: hidden;
 }
 
 .contactinfo ul{
@@ -375,24 +379,22 @@ footer .avatar a{
     width: 90%;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: -50px auto;
 }
 
 .contactinfo li{
     border-bottom: solid 1px rgba(28, 31, 36, 0.2);
 }
 
-.contactinfo li i{
-    position: absolute;
+.contactinfo li img{
+    width: 20px;
     float: left;
-    font-size: 40px;
-    color: #33241c;
 }
 
 .contactinfo li p{
     position: relative;
     margin-left: 60px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
     color: #1c1f24;
 }
@@ -409,9 +411,8 @@ footer .avatar a{
     list-style: none;
     left: 10px;
     right: 10px;
-    margin: auto;
+    margin: 90px auto;
     padding: 0;
-    overflow: hidden;
 }
 
 .social li{
@@ -427,33 +428,21 @@ footer .avatar a{
     text-align: center;
     padding: 3px;
     text-decoration: none;
-    font-size: 25px;
+    width: 25px;
     transition: 0.2s;
 }
 
 .social li a:hover{
-    color: #edce81;
-    font-size: 35px;
+    width: 35px;
 }
 
-.social .text{
-    font-size: 20px;
-    margin-top: 6px;
-    margin-left: 10px;
-    font-weight: 300;
-    color: #242a33;
-}
-
-.social .text span{
-    font-weight: 900;
-}
 
 .chat{
     width: 60%;
     display: block;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .chat img{
@@ -462,7 +451,7 @@ footer .avatar a{
     display: block;
     left: 0;
     right: 0;
-    margin-top: 30px;
+    margin: 10px auto;
     float: left;
 }
 
@@ -493,8 +482,8 @@ footer .avatar a{
 .portfolioheader a{
     position: absolute;
     margin-left: 12px;
-    font-size: 25px;
-    color: #1c1f24;
+    margin-top: 12px;
+    width: 25px;
     cursor: pointer;
 }
 
@@ -511,8 +500,8 @@ footer .avatar a{
 
 
 .portfoliocontent{
+    overflow-y: scroll;
     width: 100%;
-    display: block;
     left: 0;
     right: 0;
     margin: auto;
@@ -544,5 +533,5 @@ footer .avatar a{
     line-height: 12px;
     text-align: left;
     color: #1c1f24;
-    margin: 0;
+    margin: 20;
 }
