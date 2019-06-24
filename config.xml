@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns       = "http://www.w3.org/ns/widgets"
+            xmlns:gap   = "http://phonegap.com/ns/1.0"
+            id          = "com.islamalbadri.gobadri"
+            versionCode = "1"
+            version     = "0.1.0">
+    
+        <name>GoBadri App</name>
+
+        <description>
+        This is a show room portfolio for the ui/ux designer: Islam Albadri
+        </description>
+
+        <author email = "gobadri14@gmail.com">
+        Islam Albadri
+        </author>
+
+        <access origin = "*"/>
+        <platform name = "android"/>
+
+        <splash platform = "android" qualifier = "port-ldpi" src = "splash/ldpi.png">
+        <splash platform = "android" qualifier = "port-mdpi" src = "splash/mdpi.png">
+        <splash platform = "android" qualifier = "port-hdpi" src = "splash/hdpi.png">
+        <splash platform = "android" qualifier = "port-xhdpi" src = "splash/xhdpi.png">
+        <splash platform = "android" qualifier = "port-xxhdpi" src = "splash/xxhdpi.png">
+        <splash platform = "android" qualifier = "port-xxxhdpi" src = "splash/xxxhdpi.png">
+
+        <splash scr = "splash.png"/>
+
+        <icon src = "icon.png">
+
+        <preference name = "orientation" value = "portrait"/>
+        <preference name = "fullscreen" value = "true"/>
+        <preference name = "KeepRunning" value = "false"/>
+        <preference name = "SplashScreen" value = "screen"/>
+        <preference name = "android-build-tool" value = "gradle"/>
+
+        <plugin name = "cordova-plugin-splashscreen" source = "npm"/>
+    
+    
+    </widget>
